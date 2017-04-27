@@ -19,7 +19,7 @@
       <% @movies.each do |movie| %>
       <tr>
         <td><%= movie.titles %></td>
-        <td><%= movie.image %></td>
+        <td><img src='<%= movie.image %>' class='img-responsive'></td>
         <td><%= movie.year %></td>
         <td><%= movie.director.name %></td>
         <td>
